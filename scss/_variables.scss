@@ -1,0 +1,14 @@
+// Colors
+
+$brand-green: #9bcb6b;
+$main-text: #696969;
+$main-hover: #ffa726;
+$mainFaqColor: #37c3ff;
+$mainLinks: #0aabf1;
+
+@mixin responsive-bg-image($image-width, $image-height) {
+  background-size: 100%;
+  height: 0;
+  padding-bottom: percentage($image-height / $image-width);
+  display: block;
+}

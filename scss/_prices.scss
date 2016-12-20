@@ -1,0 +1,202 @@
+.containerPrice {
+  background: url("../img/backgroundPrices.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0rem 7.6rem 0rem;
+
+}
+
+.prices {
+
+  &__title {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    align-self: center;
+    margin-top: 2.7rem;
+  }
+
+  &__breadCrumbs {
+    margin-left: 22rem;
+
+    ul {
+      list-style: none;
+
+      li {
+        display: inline-block;
+        a {
+          color: white;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 1.3rem;
+          text-decoration: underline;
+        }
+
+        a.active {
+          text-decoration: none;
+          margin-left: 0.5rem;
+          &:before {
+            content: "> ";
+          }
+        }
+
+      }
+    }
+
+    align-self: flex-start;
+
+  }
+
+}
+
+.bestRates {
+
+  &__blockTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    p {
+      font-size: 2.8rem;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      color: #353535;
+      margin-bottom: 2.3rem;
+    }
+
+    img {
+      height: 100%;
+      width: 310px;
+    }
+
+  }
+
+  &__textBlock {
+    border-top: 1px solid #b6b6b6;
+    display: flex;
+    padding-top: 3rem;
+
+    p {
+      color: #353535;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.5rem;
+      flex-basis: 50%;
+      line-height: 1.5;
+      span {
+        color: #89ce36;
+      }
+
+    }
+
+  }
+
+}
+
+.pricesTable {
+  background: #5fb0aa;
+
+  &__firstRow {
+
+    .firstRow__deliveryOptions {
+      background: #5fb0aa;
+      margin-left: 21.7rem;
+      padding: 2.7rem 1.8rem;
+      margin-right: 3rem;
+      p {
+        font-size: 1.5rem;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 2.2rem;
+      }
+
+      .tableDelivery {
+        display: inline-flex;
+        .deliveryIcon {
+          background: url("../img/picDelivery.png") no-repeat 50% 50%, #9ac1a2;
+          width: 3.8rem;
+          height: 3.8rem;
+        }
+        .deliveryOptIcon {
+          width: 19.5rem;
+          font-size: 1.4rem;
+          font-family: 'Open Sans', sans-serif;
+          padding-left: 0.9rem;
+        }
+
+      }
+
+    }
+    .firstRow__description {
+      margin-top: 3rem;
+      margin-left: 21.7rem;
+      background: #677487;
+      .descriptionText {
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        font-family: 'Open Sans', sans-serif;
+        border-bottom: 1px solid #727f93;
+        padding: 3rem 4.5rem 3rem 4.5rem;
+        color: #f5f5f5;
+        &.writersDegree {
+          padding-top: 5.8rem;
+          padding-bottom: 5rem;
+        }
+      }
+    }
+
+  }
+
+  &__undergraduate {
+
+  }
+
+  &__graduate {
+
+  }
+
+  &__professional {
+
+  }
+
+}
+
+.priceBox {
+
+  outline: 1px solid red;
+  margin-right: 3rem;
+  width: 27rem;
+
+  &__title {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: #f4f4f4;
+    background: rgba(89, 157, 165, 1);
+    background: linear-gradient(to bottom, rgba(89, 157, 165, 1) 0%, rgba(148, 180, 157, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    align-items: center;
+
+    .title__undergrad {
+      border-bottom: 1px solid #81b4b3;
+    }
+
+    .title__price {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 100;
+      font-size: 4.5rem;
+    }
+
+    .title__perPage {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 100;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+
+

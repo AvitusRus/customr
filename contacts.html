@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.11/slideout.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./scss/animate.css">
+    <script src="js/wow.min.js"></script>
+    <script src="js/readmore.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body id="slideOut">
+<div class="wrap1920 wrap1920__TestimonialsTop1920">
+    <div class="wrap wrap__top wrap__top--aboutUs">
+
+        <div class="logo">
+            <a href=""><img src="img/logoAboutUs.png" alt=""></a>
+        </div>
+        <div class="controls">
+
+            <div class="controls__logo-buttons">
+                <a class="telephone telephone--aboutUs" href=""><p>1-855-400-46-02</p></a>
+
+                <div class="blockContrs">
+                    <a class="callBack callBack--aboutUs" href="">Call Back</a>
+                    <a class="signIn" href="">Sign in</a>
+                </div>
+
+            </div>
+            <nav class="menu menu__aboutUs">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="prices.html">Prices</a></li>
+                    <li><a href="samples.html">Samples</a></li>
+                    <li><a href="testimonials.html">Help</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a class="beforeLastItem" href="contacts.html">Contacts</a></li>
+                    <li><a class="lastItem" href="faq.html">ORDER NOW!</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="mobileMenu" id="menu">
+            <div class="buttonsBlock">
+                <a class="buttonsBlock__callUs" href="">call us: 1-855-400-46-02</a>
+                <a class="buttonsBlock__order" href="">order now!</a>
+            </div>
+
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Prices</a></li>
+                <li><a href="">Samples</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <main class="mobilePanel" id="panel">
+            <header>
+                <button class="toggle-button"><img src="img/picHamburger.png" alt=""></button>
+            </header>
+        </main>
+
+        <script>
+            var slideout = new Slideout({
+                'panel': document.getElementById('panel'),
+                'menu': document.getElementById('menu'),
+                'padding': 0,
+                'tolerance': 70,
+                'side': "right"
+            });
+
+            var toggleStatus = false;
+
+            document.querySelector('.toggle-button').addEventListener('click', function () {
+                slideout.toggle();
+            });
+        </script>
+
+    </div>
+</div>
+<div class="wrap1920 wrap1920__Contacts1920">
+    <div class="wrap wrap__Testimonials wrap__Testimonials--faq">
+        <div class="BreadAndTitle BreadAndTitle--faq">
+            <div class="breadCrumbs">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a class="active" href="">Contacts</a></li>
+                </ul>
+            </div>
+            <p class="titleAboutUs titleAboutUs--Contacts">contacts</p>
+            <h1 class="SamplesSubTitle">Contact us today for expert research paper help!</h1>
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="wrap wrap__beforeContact wow slideInRight" data-wow-duration="1s">
+    <div class="beforeContactTitle">
+        <p class="beforeContactTitle__title">before contacting us</p>
+    </div>
+    <div class="contactBlocks">
+        <div class="contactBlock contactBlock--onlineHelp">
+            <p class="contactBlock__title">Online help center</p>
+
+            <p class="contactBlock__text"><a class="contactBlock__link" href="">click here</a> to read answers to the
+                most frequently asked questions about our
+                custom writing services, privacy policy, quality assurance, payment options and security. </p>
+        </div>
+        <div class="contactBlock contactBlock--inquiries">
+            <p class="contactBlock__title">inquiries & price Quotes </p>
+
+            <p class="contactBlock__text"> If you have any questions about our custom writing service, please submit
+                your order
+                inquiry using the online form or contact our Sales department by: </p>
+
+            <p class="contactBlock__telephone">1-800-687-92-19</p>
+            <a href="" class="contactBlock__email">info@customresearchpapers.us</a>
+        </div>
+        <div class="contactBlock contactBlock--customerSupport">
+            <p class="contactBlock__title">customer support</p>
+
+            <p class="contactBlock__text">If you are an existing customer and require assistance with your order, please
+                submit your
+                inquiry using the online form or contact our Customer Support by:</p>
+
+            <p class="contactBlock__telephone">1-941-462-46-02</p>
+            <a href="" class="contactBlock__email">support@customresearchpapers.us</a>
+        </div>
+    </div>
+</div>
+
+<div class="wrap wrap__ContactForm wow slideInLeft" data-wow-duration="1s">
+    <div class="ContactForm__Title">
+        <p>contact form</p>
+    </div>
+    <div class="ContactForm__Form">
+        <div class="topPanel">
+            <div class="topPanel__leftBlock">
+                <input type="text" placeholder="Name*">
+                <input type="email" placeholder="E-mail*">
+            </div>
+            <div class="topPanel__rightBlock">
+                <input type="text" placeholder="Phone">
+                <input type="text" placeholder="Subject">
+            </div>
+        </div>
+        <div class="bottomPanel">
+            <p class="bottomPanel__message"><textarea class="bottomPanel__message"
+                                                      placeholder="Text your message here...*" rows="19" cols="45"
+                                                      name="text"></textarea></p>
+            <div class="bottomPanel__SendButton">
+                <a href="">send</a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="wrap wrap__Map">
+    <iframe width="100%" height="340" frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?q=1600%20Amphitheatre%20Parkway%20Mountain%20View%2C%20CA%2094043&key=AIzaSyAjYAGt2ebZgoGBR-kMxEp7Sg3rk_Si0iU"
+            allowfullscreen></iframe>
+</div>
+
+<div class="wrap1920 wrap1920__footer1920">
+    <div class="wrap wrap__footer">
+        <section class="address">
+            <div class="logoBlock">
+                <a href=""><img src="img/logoFooter.png" alt=""></a>
+            </div>
+            <div class="footerReq">
+                <p class="footAdr">123, Street 345, New Yar USA</p>
+
+                <p class="footTel">+123456789</p>
+
+                <p class="footmail"><a href="">mailme@website.com</a></p>
+            </div>
+
+            <section class="navigation">
+                <ul class="navigation__nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Prices</a></li>
+                    <li><a href="">Samples</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </section>
+        </section>
+
+    </div>
+</div>
+<div class="wrap1920 wrap1920__copyright1920">
+    <div class="wrap wrap__copyright">
+        <p>Copyright &#64 2016. <a href="">CustomResearchPapers</a>. All Rights Reserved</p>
+    </div>
+</div>
+</body>
+</html>

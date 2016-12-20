@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prices</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./scss/animate.css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./scss/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.11/slideout.min.js"></script>
+    <script src="bower_components/jquery-animateNumber/jquery.animateNumber.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/readmore.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</head>
+<body id="slideOut">
+<div class="wrap1920 wrap1920__TestimonialsTop1920">
+    <div class="wrap wrap__top wrap__top--prices">
+
+
+        <div class="logo">
+            <a href=""><img src="img/logoAboutUs.png" alt=""></a>
+        </div>
+
+        <div class="controls">
+
+            <div class="controls__logo-buttons">
+                <a class="telephone telephone--aboutUs" href=""><p>1-855-400-46-02</p></a>
+
+                <div class="blockContrs">
+                    <a class="callBack callBack--aboutUs" href="">Call Back</a>
+                    <a class="signIn" href="">Sign in</a>
+                </div>
+
+            </div>
+            <nav class="menu menu__aboutUs">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="prices.html">Prices</a></li>
+                    <li><a href="samples.html">Samples</a></li>
+                    <li><a href="testimonials.html">Help</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a class="beforeLastItem" href="contacts.html">Contacts</a></li>
+                    <li><a class="lastItem" href="faq.html">ORDER NOW!</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="mobileMenu" id="menu">
+            <div class="buttonsBlock">
+                <a class="buttonsBlock__callUs" href="">call us: 1-855-400-46-02</a>
+                <a class="buttonsBlock__order" href="">order now!</a>
+            </div>
+
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Prices</a></li>
+                <li><a href="">Samples</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <main class="mobilePanel" id="panel">
+            <header>
+                <button class="toggle-button"><img src="img/picHamburger.png" alt=""></button>
+            </header>
+        </main>
+
+        <script>
+            var slideout = new Slideout({
+                'panel': document.getElementById('panel'),
+                'menu': document.getElementById('menu'),
+                'padding': 0,
+                'tolerance': 70,
+                'side': "right"
+            });
+
+            var toggleStatus = false;
+
+            document.querySelector('.toggle-button').addEventListener('click', function () {
+                slideout.toggle();
+            });
+        </script>
+
+    </div>
+</div>
+<div class="wrap1920 wrap1920__Prices1920">
+    <div class="wrap wrap__Testimonials wrap__Testimonials--faq">
+        <div class="BreadAndTitle BreadAndTitle--faq green">
+            <div class="breadCrumbs">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a class="active" href="">Prices</a></li>
+                </ul>
+            </div>
+            <p class="titleAboutUs titleAboutUs--Contacts" style="color:white">Prices</p>
+            <h1 class="SamplesSubTitle">Buy research papers & essays starting from $12.95/page!</h1>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="wrap1920">
+    <div class="wrap wrap__atBestRates wow slideInDown" data-wow-duration="1s">
+        <div class="blockAtBestRates">
+            <div class="blockAtBestRates__Subtitle">
+                <p>The cost of our research paper writing service depends on the delivery option, academic level and
+                    number of pages required for your assignment. We offer the most competitive rates on the market - to
+                    help you get a top-quality work without breaking your bank.</p>
+
+                <p>You may check different price options for your required academic level by changing the delivery
+                    option below.
+                    Please, note that all new customers get <span class="blockAtBestRates__bonus">$10 bonus </span>upon
+                    registration, which is automatically applied
+                    as a discount towards your first order!</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrap1920 wrap1920__wrapPrices1920">
+    <div class="wrap blockPrices wow slideInLeft" data-wow-duration="1s">
+        <div class="ChooseDeliveryOpt">
+            <p class="ChooseDeliveryOpt__Title">
+                Choose your delivery option
+            </p>
+
+            <div class="ChooseDeliveryOpt__field">
+                <label for="pricesDelivery"></label>
+                <select id="pricesDelivery" onchange="toggleContent(event, this)" class="js-example-basic-single">
+                    <option value="d20">20 days</option>
+                    <option value="d25">25 days</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="pricesTariffsBlock">
+            <div class="priceTariff">
+                <div class="priceTariff__upper">
+                    <div class="priceTariff__Top">
+                        <p>Undergraduate</p>
+                    </div>
+                    <div class="priceTariff__Price">
+                        <p>$<span class="digitPrice">11.95</span></p>
+                    </div>
+                </div>
+
+                <div class="priceTariff__Subtitle">
+                    <p>Standard writing assignments</p>
+                </div>
+                <div class="priceTariff__Subtitle2">
+                    <p>Best for school students, Freshman and Sophomores</p>
+                </div>
+                <div class="priceTariff__OrderButton">
+                    <a href="">Order Now!</a>
+                </div>
+            </div>
+            <div class="priceTariff">
+                <div class="priceTariff__upper--middle">
+                    <div class="priceTariff__Top">
+                        <p>graduate</p>
+                    </div>
+                    <div class="priceTariff__Price">
+                        <p>$<span class="digitPrice">16.95</span></p>
+                    </div>
+                </div>
+
+                <div class="priceTariff__Subtitle">
+                    <p>Scientific research and advanced writing</p>
+                </div>
+                <div class="priceTariff__Subtitle2">
+                    <p>Best for Senior students and Graduates</p>
+                </div>
+                <div class="priceTariff__OrderButton">
+                    <a href="">Order Now!</a>
+                </div>
+            </div>
+            <div class="priceTariff">
+                <div class="priceTariff__upper--last">
+                    <div class="priceTariff__Top">
+                        <p>professonal</p>
+                    </div>
+                    <div class="priceTariff__Price">
+                        <p>$<span class="digitPrice">21.95</span></p>
+                    </div>
+                </div>
+
+                <div class="priceTariff__Subtitle">
+                    <p>Advanced writing performed with a scholarly approach.</p>
+                </div>
+                <div class="priceTariff__Subtitle2">
+                    <p>Graduates, Master and PhD students.</p>
+                </div>
+                <div class="priceTariff__OrderButton">
+                    <a href="">Order Now!</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="FreeExtrasBlock">
+            <div class="FreeExtrasBlock__Title">
+                <p><span class="FreeExtrasBlock__span">free extras</span> with every offer!</p>
+            </div>
+            <div class="FreeExtrasBlock__Column1">
+                <p>Free title page</p>
+
+                <p>Free outline</p>
+
+                <p>Free reference page</p>
+            </div>
+            <div class="FreeExtrasBlock__Column2">
+                <p>Free plagiarism Check</p>
+
+                <p>Free lifetime storage of your order</p>
+
+                <p>Free @My previous writer option</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrap wrap__OurPros wow slideInRight" data-wow-duration="1s">
+    <div class="OurProsTop">
+        <div class="OurProsTopLeftBar">
+            <div class="fairPricingPolicy">
+                <div class="fairPricingPolicy__img">
+
+                </div>
+                <div class="fairPricingPolicy__content">
+                    <div class="fairPricingPolicy__title">
+                        <p>Fair pricing policy</p>
+                    </div>
+                    <div class="fairPricingPolicy__text">
+                        <p>
+                            We strive to maintain a healthy balance between quality and cost of our service and offer
+                            you the best rates based on time-sensitive delivery options, so you can get your paper for
+                            as low as $11.95/page in 20 days, or pay $26.95/page and have it delivered overnight!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="CustomerSupport24on7">
+                <div class="CustomerSupport24on7__title">
+                    <p>24x7 customer support</p>
+                </div>
+                <div class="CustomerSupport24on7__text">
+                    <p>Our attentive and courteous customer service team is available 24x7 to answer any questions you
+                        might have about using our service, give you knowledgeable advice, help you find the right
+                        solution for you and your budget, and provide a prompt assistance with your order.</p>
+                </div>
+            </div>
+        </div>
+        <div class="OurProsTopRightBar">
+            <div class="TopRightBarTop">
+                <div class="TopRightBarTop__img">
+
+                </div>
+                <div class="TopRightBarTop__titleText">
+                    <div class="TopRightBarTop__title">
+                        <p>hand-picked team of academic writers</p>
+                    </div>
+                    <div class="TopRightBarTop__text">
+                        <p>Qualified and competent writers are the biggest asset of our business that ensures successful
+                            outcomes for our clients and, as a result, constant flow of orders for us. That’s is why we
+                            hand-pick our team based on their previous experience, educational background and unique set
+                            of
+                            skills, so that our custom research paper writing service is able to meet – and exceed - our
+                            clients' needs.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="TopRightBarBottom">
+                <div class="TopRightBarBottomLeftBlock">
+                    <div class="TopRightBarBottomLeftBlock__img">
+
+                    </div>
+                    <div class="TopRightBarBottomLeftBlock__title">
+                        <p>private and secure</p>
+                    </div>
+                    <div class="TopRightBarBottomLeftBlock__text">
+                        <p>We strive to maintain a healthy balance between quality and cost of our service and offer you
+                            the best rates based on time-sensitive delivery options, so you can get your paper for as
+                            low as $11.95/page in 20 days, or pay $26.95/page and have it delivered overnight! </p>
+                    </div>
+
+                </div>
+                <div class="TopRightBarBottomRightBlock">
+                    <div class="TopRightBarBottomRightBlock__img">
+
+                    </div>
+                    <div class="TopRightBarBottomRightBlock__title">
+                        <p>plagiarism-proof</p>
+                    </div>
+                    <div class="TopRightBarBottomRightBlock__text">
+                        <p>We strive to maintain a healthy balance between quality and cost of our service and offer you
+                            the best rates based on time-sensitive delivery options, so you can get your paper for as
+                            low as $11.95/page in 20 days, or pay $26.95/page and have it delivered overnight! </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="OurProsBottom">
+        <div class="OurProsBottom__img">
+
+        </div>
+        <div class="OurProsBottom__rightBar">
+            <div class="OurProsBottom__title">
+                <p>100% Satisfaction Guarantee</p>
+            </div>
+            <div class="OurProsBottom__text">
+                <p>Our writers put in countless hours of research and writing to provide you with top-quality papers
+                    that would meet your highest expectations. However, if you’re not quite content with the paper you
+                    have received, they will work with you to make as many revisions as you need - until you are
+                    completely satisfied. </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrap1920 wrap1920__pricesSubFooter wow slideInLeft" data-wow-duration="1s">
+    <div class="pricesSubFooterContent">
+        <div class="pricesSubFooterContent__title">
+            <h2>lorem ipsum dolor!</h2>
+        </div>
+        <div class="pricesSubFooterContent__text">
+            <p>Our writers put in countless of research and writing to provide you with top-quality papers that would
+                meet your highest expectations </p>
+        </div>
+        <div class="pricesSubFooterContent__button">
+            <a href="">order now!</a>
+        </div>
+    </div>
+</div>
+
+<div class="wrap1920 wrap1920__footer1920">
+    <div class="wrap wrap__footer">
+        <section class="address">
+            <div class="logoBlock">
+                <a href=""><img src="img/logoFooter.png" alt=""></a>
+            </div>
+            <div class="footerReq">
+                <p class="footAdr">123, Street 345, New Yar USA</p>
+
+                <p class="footTel">+123456789</p>
+
+                <p class="footmail"><a href="">mailme@website.com</a></p>
+            </div>
+
+            <section class="navigation">
+                <ul class="navigation__nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Prices</a></li>
+                    <li><a href="">Samples</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </section>
+        </section>
+
+    </div>
+</div>
+<div class="wrap1920 wrap1920__copyright1920">
+    <div class="wrap wrap__copyright">
+        <p>Copyright &#64 2016. <a href="">CustomResearchPapers</a>. All Rights Reserved</p>
+    </div>
+</div>
+</body>
+</html>

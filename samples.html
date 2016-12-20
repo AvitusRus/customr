@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Samples</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.11/slideout.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./scss/animate.css">
+    <script src="js/wow.min.js"></script>
+    <script src="js/readmore.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body id="slideOut">
+<div class="wrap1920 wrap1920__TestimonialsTop1920">
+    <div class="wrap wrap__top wrap__top--prices">
+
+
+        <div class="logo">
+            <a href=""><img src="img/logoAboutUs.png" alt=""></a>
+        </div>
+
+        <div class="controls">
+
+            <div class="controls__logo-buttons">
+                <a class="telephone telephone--aboutUs" href=""><p>1-855-400-46-02</p></a>
+
+                <div class="blockContrs">
+                    <a class="callBack callBack--aboutUs" href="">Call Back</a>
+                    <a class="signIn" href="">Sign in</a>
+                </div>
+
+            </div>
+            <nav class="menu menu__aboutUs">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="prices.html">Prices</a></li>
+                    <li><a href="samples.html">Samples</a></li>
+                    <li><a href="testimonials.html">Help</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a class="beforeLastItem" href="contacts.html">Contacts</a></li>
+                    <li><a class="lastItem" href="faq.html">ORDER NOW!</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="mobileMenu" id="menu">
+
+            <ul>
+                <li class="mobileTitle">Main menu</li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Prices</a></li>
+                <li><a href="">Samples</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contacts</a></li>
+                <li><a href="">ORDER NOW!</a></li>
+            </ul>
+            <div class="buttonsBlock">
+                <a class="buttonsBlock__order" href="">order now</a>
+                <a class="buttonsBlock__callUs" href="">call us: 1-855-400-46-02</a>
+                <a class="buttonsBlock__switchDesktop" href="">switch to desktop version</a>
+            </div>
+
+
+        </nav>
+        <main class="mobilePanel" id="panel">
+            <header>
+                <button class="toggle-button"><img src="img/picHamburger.png" alt=""></button>
+            </header>
+        </main>
+
+        <script>
+            var slideout = new Slideout({
+                'panel': document.getElementById('panel'),
+                'menu': document.getElementById('menu'),
+                'padding': 0,
+                'tolerance': 70,
+                'side': "right"
+            });
+
+            var toggleStatus = false;
+
+            document.querySelector('.toggle-button').addEventListener('click', function () {
+                slideout.toggle();
+            });
+        </script>
+
+    </div>
+</div>
+<div class="wrap1920 wrap1920__Samples1920">
+    <div class="wrap wrap__Testimonials wrap__Testimonials--faq">
+        <div class="BreadAndTitle BreadAndTitle--faq purple">
+            <div class="breadCrumbs">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a class="active" href="">Samples</a></li>
+                </ul>
+            </div>
+            <p class="titleAboutUs titleAboutUs--Contacts">Samples</p>
+
+            <h1 class="SamplesSubTitle">Samples of A+ academic papers delivered by CustomResearchPapers.us</h1>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="wrap1920 wrap1920__SamplesWrap">
+    <div class="wrap wrap__SamplesMain">
+        <div class="SamplesLeftPanel wow slideInLeft" data-wow-duration="1s">
+            <div class="BrowseOptions">
+                <div class="browseOptions__Title">
+                    <p>Browse options</p>
+                </div>
+                <div class="browseOptions__CheckBoxBlock">
+                    <form action="">
+
+                        <p class="disciplineTitle">Discipline</p>
+
+                        <p>
+                            <input type="checkbox" id="dis1"/>
+                            <label for="dis1">English literature</label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" id="dis2"/>
+                            <label for="dis2">History</label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" id="dis3"/>
+                            <label for="dis3">Finance</label>
+                        </p>
+
+                        <p class="typeOfPaper">Type of Paper</p>
+
+                        <p>
+                            <input type="checkbox" id="type1"/>
+                            <label for="type1">Book Review</label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" id="type2"/>
+                            <label for="type2">History</label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" id="type3"/>
+                            <label for="type3">Literature</label>
+                        </p>
+
+                        <p class="AcademicLevel">Academic level</p>
+
+                        <p>
+                            <input type="checkbox" id="level1"/>
+                            <label for="level1">Students</label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" id="level2"/>
+                            <label for="level2">Bachelor</label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" id="level3"/>
+                            <label for="level3">Masters</label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" id="level4"/>
+                            <label for="level4">PhD</label>
+                        </p>
+                    </form>
+                </div>
+                <div class="browseOptions__DefaultPageFormat">
+                    <div class="browseOptions__TitleDefaultPageFormat">
+                        <p>Default page format</p>
+                    </div>
+                    <p class="browseOptions__listDefaultPageFormat">250 words</p>
+
+                    <p class="browseOptions__listDefaultPageFormat">Double spaced</p>
+
+                    <p class="browseOptions__listDefaultPageFormat">Times New Roman (12 pt.)</p>
+
+                    <p class="browseOptions__listDefaultPageFormat">1 inch margins on all sides</p>
+                </div>
+            </div>
+            <div class="contactSupport contactSupport--Samples">
+                <div class="contactTitle">
+                    <p>Contact Support</p>
+                </div>
+                <div class="requisiteBlock">
+                    <div class="telBlock"><p>+1 (941) 462 46 02</p></div>
+                    <div class="infoBlock">
+                        <p>Working hours: 8 am - 5px EST</p>
+
+                        <p>You can contact support at any time through online chat by emailing:</p>
+
+                    </div>
+                    <div class="emailBlock">
+                        <a href="">info@customresearchpapers.us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="SamplesRightPanel wow slideInRight" data-wow-duration="1s">
+            <div class="sampleBlockInfo">
+                <div class="sampleBlockInfo__Title">
+                    <p>The grapes of Wrath</p>
+                </div>
+                <div class="sampleBlockInfo__Table">
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Discipline</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>English literature</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Type of paper</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>Book review</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Academic level</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>Undergraduate</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Number of pages</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>120</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Citation style</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>BlaBlaBla</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Order rate</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <img src="img/picFourVoices.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sampleBlockInfo__Button">
+                    <a href="">Download pdf</a>
+                </div>
+            </div>
+            <div class="sampleBlockInfo">
+                <div class="sampleBlockInfo__Title">
+                    <p>The grapes of Wrath</p>
+                </div>
+                <div class="sampleBlockInfo__Table">
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Discipline</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>English literature</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Type of paper</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>Book review</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Academic level</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>Undergraduate</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Number of pages</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>120</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Citation style</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>BlaBlaBla</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Order rate</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <img src="img/picFourVoices.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sampleBlockInfo__Button">
+                    <a href="">Download pdf</a>
+                </div>
+            </div>
+            <div class="sampleBlockInfo">
+                <div class="sampleBlockInfo__Title">
+                    <p>The grapes of Wrath</p>
+                </div>
+                <div class="sampleBlockInfo__Table">
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Discipline</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>English literature</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Type of paper</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>Book review</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Academic level</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>Undergraduate</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Number of pages</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>120</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Citation style</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>BlaBlaBla</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Order rate</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <img src="img/picFourVoices.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sampleBlockInfo__Button">
+                    <a href="">Download pdf</a>
+                </div>
+            </div>
+            <div class="sampleBlockInfo">
+                <div class="sampleBlockInfo__Title">
+                    <p>The grapes of Wrath</p>
+                </div>
+                <div class="sampleBlockInfo__Table">
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Discipline</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>English literature</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Type of paper</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>Book review</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Academic level</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>Undergraduate</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Number of pages</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>120</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Citation style</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>BlaBlaBla</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Order rate</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <img src="img/picFourVoices.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sampleBlockInfo__Button">
+                    <a href="">Download pdf</a>
+                </div>
+            </div>
+            <div class="sampleBlockInfo">
+                <div class="sampleBlockInfo__Title">
+                    <p>The grapes of Wrath</p>
+                </div>
+                <div class="sampleBlockInfo__Table">
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Discipline</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>English literature</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Type of paper</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>Book review</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Academic level</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>Undergraduate</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Number of pages</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>120</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Citation style</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>BlaBlaBla</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Order rate</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <img src="img/picFourVoices.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sampleBlockInfo__Button">
+                    <a href="">Download pdf</a>
+                </div>
+            </div>
+            <div class="sampleBlockInfo">
+                <div class="sampleBlockInfo__Title">
+                    <p>The grapes of Wrath</p>
+                </div>
+                <div class="sampleBlockInfo__Table">
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Discipline</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>English literature</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Type of paper</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>Book review</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Academic level</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>Undergraduate</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Number of pages</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>120</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Citation style</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>BlaBlaBla</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Order rate</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <img src="img/picFourVoices.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sampleBlockInfo__Button">
+                    <a href="">Download pdf</a>
+                </div>
+            </div>
+            <div class="sampleBlockInfo">
+                <div class="sampleBlockInfo__Title">
+                    <p>The grapes of Wrath</p>
+                </div>
+                <div class="sampleBlockInfo__Table">
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Discipline</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>English literature</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Type of paper</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>Book review</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Academic level</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>Undergraduate</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Number of pages</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>120</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Citation style</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>BlaBlaBla</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Order rate</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <img src="img/picFourVoices.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sampleBlockInfo__Button">
+                    <a href="">Download pdf</a>
+                </div>
+            </div>
+            <div class="sampleBlockInfo">
+                <div class="sampleBlockInfo__Title">
+                    <p>The grapes of Wrath</p>
+                </div>
+                <div class="sampleBlockInfo__Table">
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Discipline</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>English literature</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Type of paper</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>Book review</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Academic level</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>Undergraduate</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Number of pages</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>120</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Citation style</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>BlaBlaBla</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Order rate</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <img src="img/picFourVoices.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sampleBlockInfo__Button">
+                    <a href="">Download pdf</a>
+                </div>
+            </div>
+            <div class="sampleBlockInfo">
+                <div class="sampleBlockInfo__Title">
+                    <p>The grapes of Wrath</p>
+                </div>
+                <div class="sampleBlockInfo__Table">
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Discipline</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>English literature</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Type of paper</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>Book review</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Academic level</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>Undergraduate</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Number of pages</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>120</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Citation style</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <p>BlaBlaBla</p>
+                        </div>
+                    </div>
+                    <div class="sampleBlockInfo__Row">
+                        <div class="sampleBlockInfo__Cell1">
+                            <p>Order rate</p>
+                        </div>
+                        <div class="sampleBlockInfo__Cell2">
+                            <img src="img/picFourVoices.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sampleBlockInfo__Button">
+                    <a href="">Download pdf</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrap1920 wrap1920__contactsNeedHelp1920 wow slideInDown" data-wow-duration="1s">
+    <div class="leftNeedHelp"></div>
+    <div class="rightNeedHelp">
+        <div class="rightNeedHelp__Title">
+            <p>Need professional research paper help?</p>
+        </div>
+        <div class="rightNeedHelp__Subtitle">
+            <p>All you need to do is fill out the order form, provide your contact information and make a payment
+                processed securely by PayPal. If you have any questions, our support staff will gladly assist you. </p>
+        </div>
+        <div class="rightNeedHelp__Button">
+            <a href="">Order Now!</a>
+        </div>
+    </div>
+</div>
+
+<div class="wrap1920 wrap1920__footer1920">
+    <div class="wrap wrap__footer">
+        <section class="address">
+            <div class="logoBlock">
+                <a href=""><img src="img/logoFooter.png" alt=""></a>
+            </div>
+            <div class="footerReq">
+                <p class="footAdr">123, Street 345, New Yar USA</p>
+
+                <p class="footTel">+123456789</p>
+
+                <p class="footmail"><a href="">mailme@website.com</a></p>
+            </div>
+
+            <section class="navigation">
+                <ul class="navigation__nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Prices</a></li>
+                    <li><a href="">Samples</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </section>
+        </section>
+
+    </div>
+</div>
+<div class="wrap1920 wrap1920__copyright1920">
+    <div class="wrap wrap__copyright">
+        <p>Copyright &#64 2016. <a href="">CustomResearchPapers</a>. All Rights Reserved</p>
+    </div>
+</div>
+</body>
+</html>

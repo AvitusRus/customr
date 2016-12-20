@@ -1,0 +1,98 @@
+@mixin responsive-bg-image($image-width, $image-height) {
+  background-size: 100%;
+  height: 0;
+  padding-bottom: percentage($image-height / $image-width);
+  display: block;
+}
+
+@mixin titlePrices {
+  font-family: 'Oswald', sans-serif;
+  color: #666666;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+@mixin textPricesMain {
+  font-family: 'open_sansregular', sans-serif;
+  color: #999999;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+
+@mixin PrimeAnimation {
+  transition: all linear 0.5s;
+}
+
+@mixin whiteOrange {
+  background: $main-hover;
+  color: white;
+}
+
+@mixin whiteOrange2 {
+  color: #353535;
+  background: white;
+}
+
+@mixin showMore {
+  color: $brand-green;
+  background: white;
+}
+
+@mixin greenHover {
+  background: greenyellow;
+}
+
+
+//Long Shadow
+//http://codepen.io/awesomephant/pen/mAxHz
+//Usage: @include long-shadow(box/text, #000, 200, false, false, left);
+
+@mixin long-shadow($type, $color, $length, $fadeout: true, $skew: false, $direction: right){
+  $shadow: '';
+  @if $skew == false or $type == text{
+    @if $direction == right {
+      @for $i from 0 to $length - 1 {
+        $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $color + ',';
+      }
+    }
+    @if $direction == left {
+      @for $i from 0 to $length - 1 {
+        $shadow: $shadow + $i * -1 + 'px ' + $i + 'px 0 ' + $color + ',';
+      }
+    }
+  }
+
+  @if $fadeout == true{
+    @for $i from 1 to $length - 1 {
+      @if $type == text or $skew == false{
+        @if $direction == right{
+          $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' +       rgba($color, 1 - $i / $length) + ',';
+        }
+        @if $direction == left{
+          $shadow: $shadow + $i * -1 + 'px ' + $i + 'px 0 ' +       rgba($color, 1 - $i / $length) + ',';
+        }
+      }
+      @if ($type == box) and $skew == true{
+        @if $direction == right {
+          $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $i * .2 + 'px ' + rgba($color, 1 - $i / $length) + ',';
+        }
+        @if $direction == left {
+          $shadow: $shadow + $i * -1 + 'px ' + $i + 'px 0 ' + $i * .2 + 'px ' + rgba($color, 1 - $i / $length) + ',';
+        }
+      }
+    }
+    $shadow: $shadow + $length + 'px ' + $length + 'px 0 ' + rgba($color, 0);
+  }
+  @if $fadeout == false{
+    @if $skew == true and ( $type == box ){
+      @for $i from 0 to $length - 1 {
+        $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $i * .1 + 'px ' + $color + ',';
+      }
+    }
+    $shadow: $shadow + $length + 'px ' + $length + 'px 0 ' + rgba(0,0,0,0);
+  }
+  $shadow: unquote($shadow);
+  @if $type == 'box' {box-shadow: $shadow;}
+  @if $type == 'text' {text-shadow: $shadow;}
+}

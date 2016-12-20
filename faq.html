@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Help</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.11/slideout.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="./scss/animate.css">
+    <script src="js/wow.min.js"></script>
+
+</head>
+<body id="slideOut">
+<div class="wrap1920 wrap1920__TestimonialsTop1920">
+    <div class="wrap wrap__top wrap__top--aboutUs">
+
+        <div class="logo">
+            <a href=""><img src="img/logoAboutUs.png" alt=""></a>
+        </div>
+        <div class="controls">
+
+            <div class="controls__logo-buttons">
+                <a class="telephone telephone--aboutUs" href=""><p>1-855-400-46-02</p></a>
+
+                <div class="blockContrs">
+                    <a class="callBack callBack--aboutUs" href="">Call Back</a>
+                    <a class="signIn" href="">Sign in</a>
+                </div>
+
+            </div>
+            <nav class="menu menu__aboutUs">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="prices.html">Prices</a></li>
+                    <li><a href="samples.html">Samples</a></li>
+                    <li><a href="testimonials.html">Help</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a class="beforeLastItem" href="contacts.html">Contacts</a></li>
+                    <li><a class="lastItem" href="faq.html">ORDER NOW!</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="mobileMenu" id="menu">
+
+            <ul>
+                <li class="mobileTitle">Main menu</li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Prices</a></li>
+                <li><a href="">Samples</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contacts</a></li>
+                <li><a href="">ORDER NOW!</a></li>
+            </ul>
+            <div class="buttonsBlock">
+                <a class="buttonsBlock__order" href="">order now</a>
+                <a class="buttonsBlock__callUs" href="">call us: 1-855-400-46-02</a>
+                <a class="buttonsBlock__switchDesktop" href="">switch to desktop version</a>
+            </div>
+
+
+        </nav>
+        <main class="mobilePanel" id="panel">
+            <header>
+                <button class="toggle-button"><img src="img/picHamburger.png" alt=""></button>
+            </header>
+        </main>
+
+        <script>
+            var slideout = new Slideout({
+                'panel': document.getElementById('panel'),
+                'menu': document.getElementById('menu'),
+                'padding': 0,
+                'tolerance': 70,
+                'side': "right"
+            });
+
+            var toggleStatus = false;
+
+            document.querySelector('.toggle-button').addEventListener('click', function () {
+                slideout.toggle();
+            });
+        </script>
+
+    </div>
+</div>
+<div class="wrap1920 wrap1920__Faq1920">
+    <div class="wrap wrap__Testimonials wrap__Testimonials--faq">
+        <div class="BreadAndTitle BreadAndTitle--faq buriz">
+            <div class="breadCrumbs">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a class="active" href="">Help</a></li>
+                </ul>
+            </div>
+            <p class="titleAboutUs titleAboutUs--Contacts">Help center</p>
+            <h1 class="SamplesSubTitle">Find the answers to common questions about our research paper writing
+                service!</h1>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="wrap wrap__mainFaq wow slideInLeft" data-wow-duration="1s">
+    <div class="faqSearch">
+        <input type="text" placeholder="Type your search term here">
+
+        <div class="butFaqSearch"><a href="">search</a></div>
+    </div>
+    <div class="faqIcons">
+        <a class="howItWorks" href=""><p>how it works</p></a>
+        <a class="instantQuote" href=""><p>instant quote</p></a>
+        <a class="discountProgram" href=""><p>discount program</p></a>
+    </div>
+    <div class="faqBlockText">
+
+        <div class="faqHeaderBlock">
+            <div class="faqTitle"><p>about us</p></div>
+            <div class="faqText">
+                <a href="">What is CustomResearchPapers.us?</a>
+                <a href="">What are your qualifications for writing research papers?</a>
+                <a href="">Why should I choose you over the competition?</a>
+            </div>
+        </div>
+        <div class="faqHeaderBlock">
+            <div class="faqTitle"><p>Services & Prices</p></div>
+            <div class="faqText">
+                <a href="">What is a custom research paper?</a>
+                <a href="">Who wants to buy a research paper and why?</a>
+                <a href="">What kind of college research papers do you write?</a>
+                <a href="">Can you write custom research papers on any topic?</a>
+                <a href="">Can I see sample research papers you produce?</a>
+                <a href="">Is your service international or local?</a>
+                <a href="">How do I buy research papers online?</a>
+                <a href="">How much will it cost me to buy custom research papers online?</a>
+                <a href="">How can I get a discount for my paper?</a>
+            </div>
+        </div>
+        <div class="faqHeaderBlock">
+            <div class="faqTitle"><p>payment options and security</p></div>
+            <div class="faqText">
+                <a href="">How do I pay for my research paper?</a>
+                <a href="">How secure is your payment system?</a>
+                <a href="">What credit cards do you accept?</a>
+
+            </div>
+        </div>
+        <div class="faqHeaderBlock">
+            <div class="faqTitle"><p>Quality assurance</p></div>
+            <div class="faqText">
+                <a href="">What if I am not completely satisfied with your custom research paper?</a>
+            </div>
+        </div>
+
+
+        <div class="faqHeaderBlock">
+            <div class="faqTitle"><p>How writing process goes</p></div>
+            <div class="faqText">
+                <a href="">How do I know if my order has been processed?</a>
+                <a href="">I'd like to check the status of my paper and to know when it will be delivered. How do I do
+                    that?</a>
+                <a href="">How fast can I get my paper from you?</a>
+                <a href="">What are the chances of my paper being completed in less than 24 hours?</a>
+                <a href="">Do I need to provide the sources and additional materials to the writer?</a>
+                <a href="">Do you provide copies of all sources cited in the paper?</a>
+                <a href="">How do I send additional materials for my paper to you?</a>
+                <a href="">Do you operate on the weekends and during the holidays?</a>
+                <a href="">How will I get my paper once it is ready?</a>
+                <a href="">I am having some technical problems with placing my order. What should I do?</a>
+            </div>
+        </div>
+        <div class="faqHeaderBlock">
+            <div class="faqTitle"><p>terms of service</p></div>
+            <div class="faqText">
+                <a href="">Who owns the final rights to the paper once it is finished?</a>
+                <a href="">What will you do with the paper after you send it to the customer? Will you sell that paper
+                    again?</a>
+            </div>
+        </div>
+        <div class="faqHeaderBlock">
+            <div class="faqTitle"><p>Plagiarism</p></div>
+            <div class="faqText">
+                <a href="">Are your custom research papers truly original and plagiarism-FREE?</a>
+                <a href="">Do you check your custom research papers for plagiarism with Turnitin.com?</a>
+                <a href="">Is their any way my teachers can trace my paper back to you, if I order one?</a>
+                <a href="">My instructor said they have ways of finding if I had purchased my research papers online.
+                    What is the risk of this happening?</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="wrap1920 wrap1920__footer1920">
+    <div class="wrap wrap__footer">
+        <section class="address">
+            <div class="logoBlock">
+                <a href=""><img src="img/logoFooter.png" alt=""></a>
+            </div>
+            <div class="footerReq">
+                <p class="footAdr">123, Street 345, New Yar USA</p>
+                <p class="footTel">+123456789</p>
+                <p class="footmail"><a href="">mailme@website.com</a></p>
+            </div>
+
+            <section class="navigation">
+                <ul class="navigation__nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Prices</a></li>
+                    <li><a href="">Samples</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </section>
+        </section>
+
+    </div>
+</div>
+<div class="wrap1920 wrap1920__copyright1920">
+    <div class="wrap wrap__copyright">
+        <p>Copyright &#64 2016. <a href="">CustomResearchPapers</a>. All Rights Reserved</p>
+    </div>
+</div>
+</body>
+</html>
